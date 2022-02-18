@@ -279,10 +279,7 @@
     <Content Include="Views\DONHANGs\Details.cshtml" />
     <Content Include="Views\DONHANGs\Edit.cshtml" />
     <Content Include="Views\DONHANGs\Index.cshtml" />
-    <Content Include="Views\GIOHANGs\Create.cshtml" />
     <Content Include="Views\GIOHANGs\Delete.cshtml" />
-    <Content Include="Views\GIOHANGs\Details.cshtml" />
-    <Content Include="Views\GIOHANGs\Edit.cshtml" />
     <Content Include="Views\GIOHANGs\Index.cshtml" />
     <Content Include="Views\KHACHHANGs\Create.cshtml" />
     <Content Include="Views\KHACHHANGs\Delete.cshtml" />
@@ -324,6 +321,7 @@
     <Content Include="Views\TAIKHOANs\Details.cshtml" />
     <Content Include="Views\TAIKHOANs\Edit.cshtml" />
     <Content Include="Views\TAIKHOANs\Index.cshtml" />
+    <Content Include="Views\GIOHANGs\Dathang.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

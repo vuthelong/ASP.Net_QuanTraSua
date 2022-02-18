@@ -21,6 +21,12 @@ namespace ASP.NET_QuanTraSua.Controllers
             return View(gIOHANG.ToList());
         }
 
+        public ActionResult Dathang()
+        {
+            var gIOHANG = db.GIOHANG.Include(g => g.DONHANG);
+            return View(gIOHANG.ToList());
+        }
+
         // GET: GIOHANGs/Details/5
         public ActionResult Details(string id)
         {
@@ -33,47 +39,6 @@ namespace ASP.NET_QuanTraSua.Controllers
             {
                 return HttpNotFound();
             }
-            return View(gIOHANG);
-        }
-
-        // GET: GIOHANGs/Create
-        public ActionResult Create()
-        {
-            ViewBag.MaDH = new SelectList(db.DONHANG, "MaDH", "PhuongThucThanhToan");
-            return View();
-        }
-
-        // POST: GIOHANGs/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "MaGH,MaDH")] GIOHANG gIOHANG)
-        {
-            if (ModelState.IsValid)
-            {
-                db.GIOHANG.Add(gIOHANG);
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }
-
-            ViewBag.MaDH = new SelectList(db.DONHANG, "MaDH", "PhuongThucThanhToan", gIOHANG.MaDH);
-            return View(gIOHANG);
-        }
-
-        // GET: GIOHANGs/Edit/5
-        public ActionResult Edit(string id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            GIOHANG gIOHANG = db.GIOHANG.Find(id);
-            if (gIOHANG == null)
-            {
-                return HttpNotFound();
-            }
-            ViewBag.MaDH = new SelectList(db.DONHANG, "MaDH", "PhuongThucThanhToan", gIOHANG.MaDH);
             return View(gIOHANG);
         }
 
