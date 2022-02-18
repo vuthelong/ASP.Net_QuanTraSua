@@ -506,12 +506,12 @@ GO
 --SELECT * FROM TAIKHOAN WHERE PhanQuyen = N'Nhân viên'
 INSERT INTO NHANVIEN(TenNV, NgaySinh, Username, Email, DiaChi, DienThoai, STK, Luong) VALUES (N'Vũ','1/1/2020','nv1' ,'vu@gmail.com', N'Hà Nội', 0123, '123', 500000)
 GO
-INSERT INTO NHANVIEN(TenNV, NgaySinh, Username, Email, DiaChi, DienThoai, STK, Luong) VALUES (N'Bùi','1/1/2020','nv1' ,'bui@gmail.com', N'Hà Nội', 0123, '123', 500000)
+INSERT INTO NHANVIEN(TenNV, NgaySinh, Username, Email, DiaChi, DienThoai, STK, Luong) VALUES (N'Bùi','1/1/2020','nv2' ,'bui@gmail.com', N'Hà Nội', 0123, '123', 500000)
 GO
-INSERT INTO NHANVIEN(TenNV, NgaySinh, Username, Email, DiaChi, DienThoai, STK, Luong) VALUES (N'Nguyễn','1/1/2020','nv1' ,'nguyen@gmail.com', N'Hà Nội', 0123, '123', 500000)
+INSERT INTO NHANVIEN(TenNV, NgaySinh, Username, Email, DiaChi, DienThoai, STK, Luong) VALUES (N'Nguyễn','1/1/2020','nv3' ,'nguyen@gmail.com', N'Hà Nội', 0123, '123', 500000)
 GO
-INSERT INTO NHANVIEN(TenNV, NgaySinh, Username, Email, DiaChi, DienThoai, STK, Luong) VALUES (N'Triệu','1/1/2020','nv1' ,'trieu@gmail.com', N'Hà Nội', 0123, '123', 500000)
+INSERT INTO NHANVIEN(TenNV, NgaySinh, Username, Email, DiaChi, DienThoai, STK, Luong) VALUES (N'Triệu','1/1/2020','nv4' ,'trieu@gmail.com', N'Hà Nội', 0123, '123', 500000)
 GO
-INSERT INTO NHANVIEN(TenNV, NgaySinh, Username, Email, DiaChi, DienThoai, STK, Luong) VALUES (N'Đỗ','1/1/2020','nv1' ,'do@gmail.com', N'Hà Nội', 0123, '123', 500000)
+INSERT INTO NHANVIEN(TenNV, NgaySinh, Username, Email, DiaChi, DienThoai, STK, Luong) VALUES (N'Đỗ','1/1/2020','nv5' ,'do@gmail.com', N'Hà Nội', 0123, '123', 500000)
 GO
 
